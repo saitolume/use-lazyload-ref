@@ -24,7 +24,7 @@ const Component = ({ url }) => {
     <>
       {isLoaded || <Skeleton />}
       <img ref={ref} data-src={url}>
-    <>
+    </>
   )
 }
 ```
