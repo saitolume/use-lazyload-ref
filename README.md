@@ -1,6 +1,9 @@
 # use-lazyload-ref
 
+![CI Status](https://github.com/saitoeku3/use-lazyload-ref/workflows/Node%20CI/badge.svg)
+
 > A custom hook to use lazy load easily
+
 
 ## Install
 
@@ -12,8 +15,8 @@ $ yarn add use-lazyload-ref
 ## Usage
 
 ```tsx
-import React from 'react
-import useLazyloadRef from 'use-lazyload-ref
+import React from 'react'
+import useLazyloadRef from 'use-lazyload-ref'
 
 const Component = ({ url }) => {
   const [ref, isLoaded] = useLazyloadRef()
