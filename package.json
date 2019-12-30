@@ -1,19 +1,22 @@
 {
   "name": "use-lazyload-ref",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Custom hook to use lazy load easily",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/saitoeku3/use-lazyload-ref"
   },
+  "files": ["dist"],
   "keywords": [
     "react"
   ],
   "scripts": {
     "build": "tsc -b tsconfig.json",
     "format": "eslint \"**/*.ts\" --fix",
-    "lint": "eslint \"**/*.ts\""
+    "lint": "eslint \"**/*.ts\"",
+    "prepublish": "npm run build"
   },
   "author": "Tadao Iseki <saitoeku3@gmail.com>",
   "license": "MIT",
