@@ -1,0 +1,47 @@
+{
+  "name": "use-lazyload-ref",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saitoeku3/use-lazyload-ref"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "format": "eslint \"**/*.ts\" --fix",
+    "lint": "eslint \"**/*.ts\""
+  },
+  "author": "Tadao Iseki <saitoeku3@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.9.17",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "react": "^16.12.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run format",
+      "git add"
+    ]
+  }
+}
