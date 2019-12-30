@@ -1,9 +1,8 @@
 # use-lazyload-ref
 
-![CI Status](https://github.com/saitoeku3/use-lazyload-ref/workflows/Node%20CI/badge.svg)
+[![npm version](https://badge.fury.io/js/use-lazyload-ref.svg)](https://badge.fury.io/js/use-lazyload-ref) ![CI Status](https://github.com/saitoeku3/use-lazyload-ref/workflows/Node%20CI/badge.svg)
 
-> A custom hook to use lazy load easily
-
+> Custom hook to use lazy load easily
 
 ## Install
 
@@ -14,7 +13,7 @@ $ yarn add use-lazyload-ref
 
 ## Usage
 
-```tsx
+```jsx
 import React from 'react'
 import useLazyloadRef from 'use-lazyload-ref'
 
