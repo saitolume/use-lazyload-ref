@@ -14,8 +14,8 @@
   ],
   "scripts": {
     "build": "tsc -b tsconfig.json",
-    "format": "eslint \"**/*.ts\" --fix",
-    "lint": "eslint \"**/*.ts\"",
+    "format": "eslint \"src/**/*.ts\" --fix",
+    "lint": "eslint \"src/**/*.ts\"",
     "prepublish": "npm run build"
   },
   "author": "Tadao Iseki <saitoeku3@gmail.com>",
