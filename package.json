@@ -8,14 +8,17 @@
     "type": "git",
     "url": "https://github.com/saitoeku3/use-lazyload-ref"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "react"
   ],
   "scripts": {
-    "build": "tsc -b tsconfig.json",
+    "build": "tsc -b tsconfig.json && npm run minify",
     "format": "eslint \"src/**/*.ts\" --fix",
     "lint": "eslint \"src/**/*.ts\"",
+    "minify": "uglifyjs -c -m -o dist/index.js dist/index.js",
     "prepublish": "npm run build"
   },
   "author": "Tadao Iseki <saitoeku3@gmail.com>",
@@ -30,7 +33,8 @@
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.4",
+    "uglify-js": "^3.7.4"
   },
   "peerDependencies": {
     "react": "^16.8.0",
