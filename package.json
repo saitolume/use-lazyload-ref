@@ -1,7 +1,7 @@
 {
   "name": "use-lazyload-ref",
   "version": "0.1.2",
-  "description": "Custom hook to use lazy load easily",
+  "description": "Custom hook to use lazyload easily",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -12,7 +12,9 @@
     "dist"
   ],
   "keywords": [
-    "react"
+    "react",
+    "hooks",
+    "lazyload"
   ],
   "scripts": {
     "build": "tsc -b tsconfig.json && npm run minify",
