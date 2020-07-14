@@ -24,7 +24,7 @@ const Component = ({ url }) => {
 
   return (
     <div>
-      {isLoaded || <Skeleton />}
+      {hasLoaded || <Skeleton />}
       <img ref={ref} data-src={url} />
       {/* <audio ref={ref} data-src={url} />*/}
       {/* <iframe ref={ref} data-src={url} />*/}
